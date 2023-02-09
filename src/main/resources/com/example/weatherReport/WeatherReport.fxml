@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #2A363B;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.weatherReport.Controller">
+   <children>
+      <Text fx:id="weather" fill="#fecea8" layoutX="16.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Погода:" wrappingWidth="267.9999832153319">
+         <font>
+            <Font name="Bookerly" size="26.0" />
+         </font>
+      </Text>
+      <AnchorPane prefHeight="120.0" prefWidth="300.0" style="-fx-background-color: #2A363B;">
+         <children>
+            <Label layoutX="45.0" layoutY="19.0" prefHeight="82.0" prefWidth="210.0" text="Погода" textFill="#e84a5f">
+               <font>
+                  <Font name="Bookerly" size="56.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button id="nextDay" fx:id="nextDay" layoutX="197.0" layoutY="398.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="88.0" style="-fx-background-color: #FF847B;" text="след." textFill="#2a363b">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button id="previousDay" fx:id="previousDay" layoutX="14.0" layoutY="398.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="88.0" style="-fx-background-color: #FF847B;" text="пред." textFill="#2a363b">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextField id="region" fx:id="region" layoutX="147.0" layoutY="120.0" prefHeight="36.0" prefWidth="138.0" promptText="Регион">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Text fill="#ff847b" layoutX="14.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-bounds-type: #FF847B;" text="Ваш регион" wrappingWidth="128.72254943847656">
+         <font>
+            <Font name="Bookerly" size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="temperature" fill="#fecea8" layoutX="16.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Температура:" wrappingWidth="267.9999832153319">
+         <font>
+            <Font name="Bookerly" size="26.0" />
+         </font>
+      </Text>
+      <Text fill="#ff847b" layoutX="125.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="День">
+         <font>
+            <Font name="Bookerly" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="humidity" fill="#fecea8" layoutX="20.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Влажность:" wrappingWidth="259.99992218017564">
+         <font>
+            <Font name="Bookerly" size="26.0" />
+         </font>
+      </Text>
+      <Text fx:id="date" fill="#ff847b" layoutX="106.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="88.0">
+         <font>
+            <Font name="Bookerly" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="getWeather" layoutX="159.0" layoutY="167.0" mnemonicParsing="false" style="-fx-background-color: #FF847B;" text="Узнать погоду" textFill="#2a363b">
+         <font>
+            <Font name="Bookerly" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
